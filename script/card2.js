@@ -15,4 +15,7 @@ document.getElementById("dark-btn").addEventListener("click", function(event){
         You have complete the task ${cardTitle.innerText} at ${today};
     `
     div.appendChild(p);
+
+    document.getElementById("activity-history").style.display = "block";
+    alert("Bord updated succesfully");
 })
