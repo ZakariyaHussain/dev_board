@@ -19,7 +19,7 @@
             <div class="navbar-end ">
                 <div class="flex gap-2 bg-[#F4F7FF] rounded-2xl px-2 py-1 mr-6">
                     <img src="assets/checkbox.png" alt="">
-                    <p class="font-bold">20</p>
+                    <p id="completed-task" class="font-bold">20</p>
                 </div>
               <a class="bg-[#F4F7FF] rounded-[50%] p-2"><img src="assets/theme-btn.png" alt=""></a>
             </div>
@@ -28,16 +28,18 @@
     <!-- main -->
      <main class="flex gap-4">
         <div class="w-[80%] bg-slate-500 rounded-xl p-4">
+          <!-- heading cards -->
             <section class="flex gap-8 my-10">
-                <div class="flex justify-center items-center bg-[#F4F7FF] rounded-xl px-8">
-                    <figure class="bg-white p-4 rounded-full">
+              <!-- task assign -->
+                <div class="w-1/4 flex justify-center items-center bg-[#F4F7FF] rounded-xl px-4">
+                    <figure class="bg-white p-2 rounded-full">
                       <img
                         src="assets/checkbox.png"
                         alt="Album" />
                     </figure>
                     <div class="card-body">
                       <p>Task Assigned</p>
-                      <h2 class="card-title">05</h2>
+                      <h2 id="assigned-number" class="card-title">6</h2>
                     </div>
                 </div>
                 <!-- discover something -->
@@ -52,15 +54,14 @@
                     </div>
                 </div>
                 <!-- date -->
-                <div class="flex justify-center items-center bg-[#F4F7FF] rounded-xl px-8">
-                    <figure class="bg-white p-4 rounded-full">
+                <div class="w-1/4 flex gap-4 justify-center items-center bg-[#F4F7FF] rounded-xl px-4">
+                    <figure class="bg-white p-2 rounded-full">
                       <img
                         src="assets/calender.png"
                         alt="Album" />
                     </figure>
-                    <div class="card-body">
-                      <p>wed,</p>
-                      <h2 class="card-title">July 28 2025</h2>
+                    <div class="">
+                      <h2 id="date" class="">July 28 2025</h2>
                     </div>
                 </div>
             </section>
@@ -69,8 +70,8 @@
                 <!-- card 1 -->
                 <div class="card bg-[#F4F7FF]">
                   <div class="card-body">
-                      <p class="bg-white w-1/4 p-1 rounded">ShopEase</p>
-                      <h2 class="card-title">Fix Mobile Button Issue</h2>
+                      <p class="bg-white w-2/5 px-3 py-1 rounded">ShopEase</p>
+                      <h2 id="card1-title" class="card-title">Fix Mobile Button Issue</h2>
                       <p class="h-16 bg-white overflow-hidden p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                       and ensure onClick works properly</p>
                       <div class="card-actions justify-between">
@@ -78,87 +79,86 @@
                               <p>Deadline</p>
                               <time datetime="28-02-2025">28 Feb 2025</time>
                           </div>
-                          <button class="btn border-0 bg-[#3752FD] text-white">Completed</button>
+                          <button id="fixIssue-btn" class="btn border-0 bg-[#3752FD] text-white">Completed</button>
                       </div>
                   </div>
                 </div>
                 <!-- card 2 -->
                 <div class="card bg-[#F4F7FF]">
                   <div class="card-body">
-                      <p class="bg-white w-1/4 p-1 rounded">ShopEase</p>
-                      <h2 class="card-title">Fix Mobile Button Issue</h2>
-                      <p class="h-16 bg-white overflow-hidden p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                      and ensure onClick works properly</p>
-                      <div class="card-actions justify-between">
-                          <div>
-                              <p>Deadline</p>
-                              <time datetime="28-02-2025">28 Feb 2025</time>
-                          </div>
-                      <button class="btn bg-[#3752FD] text-white">Completed</button>
+                    <p class="bg-white w-2/5 px-3 py-1 rounded">CloudSync</p>
+                    <h2 id="card2-title" class="card-title">Add Dark Mode</h2>
+                    <p class="h-16 bg-white overflow-hidden p-2">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                    <div class="card-actions justify-between">
+                      <div>
+                        <p>Deadline</p>
+                        <time datetime="28-02-2025">28 Feb 2025</time>
                       </div>
+                        <button id="dark-btn" class="btn bg-[#3752FD] text-white">Completed</button>
+                    </div>
                   </div>
                 </div>
                 <!-- card 3 -->
                 <div class="card bg-[#F4F7FF]">
                   <div class="card-body">
-                      <p class="bg-white w-1/4 p-1 rounded">ShopEase</p>
-                      <h2 class="card-title">Fix Mobile Button Issue</h2>
+                      <p class="bg-white w-2/5 px-3 py-1 rounded">SwiftPay</p>
+                      <h2 id="card3-title" class="card-title">Optimize  Home page</h2>
                       <p class="h-16 bg-white overflow-hidden p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                      and ensure onClick works properly</p>
+                        and ensure onClick works properly</p>
                       <div class="card-actions justify-between">
                           <div>
                               <p>Deadline</p>
                               <time datetime="28-02-2025">28 Feb 2025</time>
                           </div>
-                      <button class="btn bg-[#3752FD] text-white">Completed</button>
+                      <button id="optimize-btn" class="btn bg-[#3752FD] text-white">Completed</button>
                       </div>
                   </div>
                 </div>
                 <!-- card 4 -->
                 <div class="card bg-[#F4F7FF]">
                   <div class="card-body">
-                      <p class="bg-white w-1/4 p-1 rounded">ShopEase</p>
-                      <h2 class="card-title">Fix Mobile Button Issue</h2>
+                      <p class="bg-white w-2/5 px-3 py-1 rounded">Meta</p>
+                      <h2 id="card4-title" class="card-title">Add new emoji 🤲</h2>
                       <p class="h-16 bg-white overflow-hidden p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                       and ensure onClick works properly</p>
                       <div class="card-actions justify-between">
-                          <div>
-                              <p>Deadline</p>
-                              <time datetime="28-02-2025">28 Feb 2025</time>
-                          </div>
-                      <button class="btn bg-[#3752FD] text-white">Completed</button>
+                        <div>
+                          <p>Deadline</p>
+                          <time datetime="28-02-2025">28 Feb 2025</time>
+                        </div>
+                        <button id="imogi-btn" class="btn bg-[#3752FD] text-white">Completed</button>
                       </div>
                   </div>
                 </div>
                 <!-- card 5 -->
                 <div class="card bg-[#F4F7FF]">
                   <div class="card-body">
-                      <p class="bg-white w-1/4 p-1 rounded">ShopEase</p>
-                      <h2 class="card-title">Fix Mobile Button Issue</h2>
+                      <p class="bg-white w-2/5 px-3 py-1 rounded">Google LLC</p>
+                      <h2 id="card5-title" class="card-title">Integrate OpenAI API</h2>
                       <p class="h-16 bg-white overflow-hidden p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                       and ensure onClick works properly</p>
                       <div class="card-actions justify-between">
-                          <div>
-                              <p>Deadline</p>
-                              <time datetime="28-02-2025">28 Feb 2025</time>
-                          </div>
-                      <button class="btn bg-[#3752FD] text-white">Completed</button>
+                        <div>
+                          <p>Deadline</p>
+                          <time datetime="28-02-2025">28 Feb 2025</time>
+                        </div>
+                        <button id="google-btn" class="btn bg-[#3752FD] text-white">Completed</button>
                       </div>
                   </div>
                 </div>
                 <!-- card 6 -->
                 <div class="card bg-[#F4F7FF]">
                   <div class="card-body">
-                      <p class="bg-white w-1/4 p-1 rounded">ShopEase</p>
-                      <h2 class="card-title">Fix Mobile Button Issue</h2>
+                      <p class="bg-white w-2/5 px-3 py-1 rounded">Glassdoar</p>
+                      <h2 id="card6-title" class="card-title">Improve Job searching</h2>
                       <p class="h-16 bg-white overflow-hidden p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                       and ensure onClick works properly</p>
                       <div class="card-actions justify-between">
-                          <div>
-                              <p>Deadline</p>
-                              <time datetime="28-02-2025">28 Feb 2025</time>
-                          </div>
-                      <button class="btn bg-[#3752FD] text-white">Completed</button>
+                        <div>
+                          <p>Deadline</p>
+                          <time datetime="28-02-2025">28 Feb 2025</time>
+                        </div>
+                        <button id="job-btn" class="btn bg-[#3752FD] text-white">Completed</button>
                       </div>
                   </div>
                 </div>
@@ -168,12 +168,15 @@
         <!-- sidebar -->
         <div class="w-[20%] bg-slate-500 rounded-xl p-4">
           <section>
-            <div class="text-center space-y-4">
+            <div class="text-center space-y-4 border-b pb-5">
               <div class="flex justify-center gap-4 ">
                 <img src="assets/activity.png" alt="">
                 <h3>Activity Log</h3>
               </div>
               <button class="btn border-0 bg-[#3752FD] text-white" type="reset">Clear History</button>
+            </div>
+            <div id="activity-history">
+
             </div>
           </section>
         </div>
@@ -182,5 +185,18 @@
       <footer>
 
       </footer>
+
+
+      <script src="script/card6.js"></script>
+      <script src="script/card5.js"></script>
+      <script src="script/card4.js"></script>
+      <script src="script/card3.js"></script>
+      <script src="script/card2.js"></script>
+      <script src="script/utilities.js"></script>
+      <script src="script/main.js"></script>
+      <script>
+        let today = new Date();
+        document.getElementById("date").innerHTML = today;
+      </script>
 </body>
 </html>
