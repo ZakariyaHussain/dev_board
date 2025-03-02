@@ -9,7 +9,7 @@ document.getElementById("optimize-btn").addEventListener("click", function(event
     const div = document.getElementById("activity-history");
     const p = document.createElement("p");
     const cardTitle = document.getElementById("card3-title");
-    let today = new Date();
+    let today = new Date().toLocaleTimeString();
     
     p.innerText = `
         You have complete the task ${cardTitle.innerText} at ${today};
