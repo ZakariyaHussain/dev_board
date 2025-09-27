@@ -20,4 +20,5 @@ document.getElementById("job-btn").addEventListener("click", function(event){
     document.getElementById("activity-history").style.display = "block";
     alert("Bord updated succesfully");
     alert("All Bords updated succesfully");
+    
 })
